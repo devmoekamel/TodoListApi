@@ -1,7 +1,3 @@
-Certainly! If you're writing a README to showcase your skills rather than for an open-source project, you might want to focus more on the technical aspects and highlight your expertise. Here's a README tailored for that purpose:
-
----
-
 # TodoList API
 
 Welcome to the TodoList API repository! This project demonstrates my skills in building a RESTful web service using .NET Core for managing tasks in a todo list application. Below, you'll find information about the project structure, key features, and how to run the application.
