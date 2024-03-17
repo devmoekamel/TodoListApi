@@ -1,6 +1,6 @@
 # TodoList API
 
-Welcome to the TodoList API repository! This project demonstrates my skills in building a RESTful web service using .NET Core for managing tasks in a todo list application. Below, you'll find information about the project structure, key features, and how to run the application.
+Todo List API implemented using the .NET framework. It serves as a backend service for managing tasks in a todo list application.
 
 ## Table of Contents
 
