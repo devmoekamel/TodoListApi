@@ -21,6 +21,26 @@ The project structure follows a typical .NET Core Web API pattern:
 - **Models and DTOs:** Defines data models and DTOs (Data Transfer Objects) used for communication.
 - **Context:** Includes database context and migrations for Entity Framework Core.
 
+**Model Relationship:**
+
+```
++-------------------+        1          +---------------------+
+|  ApplicationUser  |----------------->|       Taskk         |
++-------------------+   0..N          +---------------------+
+| Id: int           |                   | Id: int             |
+| UserName: string |                   | Name: string        |
+| FirstName: string|                   | Description: string|
+| LastName: string |                   | IsCompleted: bool  |
+|                   |                   | CreatedOn: DateTime|
++-------------------+                   | UserId: string     |
+                                        +---------------------+
+``` 
+
+In this horizontal diagram:
+- `ApplicationUser` has a one-to-many relationship with `Taskk`, represented by the `Tasks` property in `ApplicationUser`.
+- Each `Taskk` belongs to exactly one `ApplicationUser`, represented by the `UserId` foreign key in `Taskk`.
+- The relationship is depicted by the arrows, indicating the direction of the relationship from `ApplicationUser` to `Taskk`.
+
 ## Key Features
 
 - **Task Management:** Implements CRUD operations for tasks, allowing users to create, read, update, and delete tasks.
@@ -59,5 +79,3 @@ Unit tests are available in the `Tests` directory. To run the tests, execute `do
 ## Conclusion
 
 Thank you for exploring the TodoList API project! I hope this repository demonstrates my proficiency in building scalable, secure, and well-documented APIs using .NET Core. If you have any questions or feedback, feel free to reach out.
-
-
