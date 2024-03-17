@@ -60,6 +60,4 @@ Unit tests are available in the `Tests` directory. To run the tests, execute `do
 
 Thank you for exploring the TodoList API project! I hope this repository demonstrates my proficiency in building scalable, secure, and well-documented APIs using .NET Core. If you have any questions or feedback, feel free to reach out.
 
----
 
-Feel free to customize this README further to highlight specific aspects of your project or to better showcase your skills.
